@@ -1,0 +1,33 @@
+FTP Enumeration Lab Commands
+
+1. Discover open ports
+
+nmap -sS 192.168.56.102
+
+2. Detect FTP service version and run default scripts
+
+nmap -sC -sV -p 21 192.168.56.102
+
+3. Connect to FTP
+
+ftp 192.168.56.102
+
+4. Inside the FTP session
+
+anonymous
+
+5. List files
+
+ls
+
+6. Show current FTP directory
+
+pwd
+
+7. Show detailed directory listing
+
+ls -la
+
+8. Exit FTP
+
+quit
